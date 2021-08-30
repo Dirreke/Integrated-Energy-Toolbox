@@ -1,0 +1,1 @@
+functoin result = changeindex(matrix )
