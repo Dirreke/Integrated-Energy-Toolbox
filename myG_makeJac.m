@@ -21,7 +21,7 @@ Kg_B = 1;%%%???
 
 [~,~, compressor,~] = myG_branchtypes(branch);
 [load,~,~] = myG_bustypes(bus);
-Kr = 70840/Kg_B./sqrt(branch(:,LENGTH));
+Kr = 70840/Kg_B./sqrt(branch(:,LENGTH));%%%%?????
 Kr1 = Kr;
 Kr1(compressor) = [];
 

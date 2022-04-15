@@ -7,7 +7,7 @@ function mpc = case_H
 mpc.version = '2';
 
 %% system MVA base
-mpc.baseMVA = 100;
+% mpc.baseMVA = 100;
 
 %% bus data
 % % bus_i  type  Pd  Qd  Gs  Bs  area  Vm  Va  baseKV  zone  Vmax  Vmin
@@ -20,7 +20,7 @@ mpc.baseMVA = 100;
 % ];
 % 1 用户节点
 % 2 热源节点
-% Ph 热功率
+% Ph 热功率 W 
 % To 输出温度
 % bus_i  type  Phid  To  Ts  Tr
 mpc.bus = [

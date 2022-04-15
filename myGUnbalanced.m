@@ -38,7 +38,7 @@ Kr1(compressor) = [];
 
 %% PSquare
 PSquare = zeros(max(bus(:,BUS_I)),1);
-temp = bus(:,PR).^2;
+temp = bus(:,PR).^2;%%？？
 for k = 1:length(PSquare)
     PSquare(k) = temp(bus(:,BUS_I) == k);
 end

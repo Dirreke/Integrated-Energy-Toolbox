@@ -34,14 +34,15 @@ mpc.bus = [
 
 % Gload=[0 1100 1647.12 1871.35 2000]/G_B;
 %% generator data
-% bus  Gg Vg    Gmax  Gmin
+% F流量
+% bus  Fg Pg    Fmax  Fmin
 mpc.gen = [
   1  0  5.0000  5000  0
   2  0  5.0000	5000  0
 ];
 %% branch data
 % fbus  tbus  length  diameter  Type
-% Type: 树枝1/连枝2/压缩机3
+% Type: 树枝1/连枝2/压缩机3  %%？？ 管网类型 高中低压网络
 mpc.branch=[
     1 3 500 0.150 1;
    2 6 2500 0.150 1;

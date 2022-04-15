@@ -52,8 +52,8 @@ while 1
     mpc_E2.bus(1,9) = V2(2);
     
     %%
-    [mpc_E1,mpc_G1,~] = myEGHmain3(mpc_E1,mpc_G1,mpc_H1,mpc_CHP1,1);
-    [mpc_E2,mpc_G2,~] = myEGHmain3(mpc_E2,mpc_G2,mpc_H2,mpc_CHP2);
+    [mpc_E1,mpc_G1,~] = myEGHmain(mpc_E1,mpc_G1,mpc_H1,mpc_CHP1,1);
+    [mpc_E2,mpc_G2,~] = myEGHmain(mpc_E2,mpc_G2,mpc_H2,mpc_CHP2);
     %%
     Tcase = loadcase('case3T.m');
     mpc_E3.bus(28,3:4) = mpc_E1.gen(1,2:3);
@@ -78,14 +78,14 @@ hold on
 grid on 
 plot(1:10,e1(1:10,1))
 plot(1:10,e2(1:10,1))
-ylabel('电压幅值修正量(pu)');
+ylabel('电压幅�?�修正量(pu)');
 xlabel('迭代次数');
-title('电压幅值迭代修正量');
+title('电压幅�?�迭代修正量');
 figure
 hold on 
 grid on
 plot(1:10,e1(1:10,2))
 plot(1:10,e2(1:10,2))
-ylabel('电压相位修正量(deg)');
+ylabel('电压相位修正�?(deg)');
 xlabel('迭代次数');
-title('电压相位迭代修正量');
+title('电压相位迭代修正�?');
